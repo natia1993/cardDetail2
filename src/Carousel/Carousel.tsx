@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import "./carousel.css"
 import nextArrow from "../images/icon-next.svg"
 import prevArrow from "../images/icon-previous.svg"
@@ -17,9 +17,6 @@ type CarouselProps = {
   choosePicture: (image: string) => void;
   onClose: () => void; // ✅ საჭიროა overlay-ზე დაკლიკებისას დახურვისთვის
 };
-
-
-
 const Carousel: React.FC<CarouselProps> = ({ image, products, choosePicture, onClose }) => {
  function getNextImage(products: Product[], image: string): string {
   const currentIndex = products.findIndex(p => p.image === image);
