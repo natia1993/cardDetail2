@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://natia1993.github.io/cardDetail",
+
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -30,3 +32,4 @@
     "vite": "^6.3.5"
   }
 }
+
