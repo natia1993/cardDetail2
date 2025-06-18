@@ -1,0 +1,208 @@
+.product-img{
+ width: 445px;
+height: 445px;
+flex-shrink: 0;
+}
+.product-list1{
+
+  display: flex;
+  flex-direction: row; /* ჰორიზონტალური განლაგება */
+  flex-wrap: wrap; /* საჭიროებისამებრ გადატანა შემდეგ ხაზზე */
+  gap: 20px; /* მანძილი ბარათებს შორის */
+  justify-content: space-between;/* ცენტრში განლაგება */
+  width:445px;
+
+}
+.product-list{
+  position:relative;
+}
+.product-list1{
+  position:absolute;
+}
+.product-card{
+  
+}
+.product-card1{
+ position:relative;
+  width: 88px;
+height: 88px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 2px solid #FF7E1B;
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+}
+.main-page{
+
+  display:flex;
+  gap:200px;
+  width:100%;
+  justify-content: space-between;
+  }
+.FullProduct{
+ /* margin-top:500px; */
+ width: 445px;
+height: 426px;
+flex-shrink: 0;
+
+}
+.quantity-input{
+  width:100px;
+  height:56px;
+  border:none;
+  text-align: center;
+  background-color: transparent;
+  color:black;
+}
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.quantity-input[type="number"] {
+  -moz-appearance: textfield;
+}
+.input-field{
+  width: 157px;
+height: 56px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #F6F8FD;
+}
+.main-quantity{
+display:flex;
+}
+.main-quantity .quantity-btn {
+  border:none;
+  color:#FF7E1B;
+  width:24px;
+  background-color: transparent;
+
+}
+.cart-btn {
+  width: 272px;
+  height: 56px;
+  color: white;
+  border-radius: 10px;
+  background: #FF7E1B;
+  box-shadow: 0px 20px 50px -20px #FF7E1B;
+  border:none;
+}
+.title{
+  color: #1D2026;
+font-family: "Kumbh Sans";
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 109.091% */
+}
+.description{
+  color: #69707D;
+font-family: "Kumbh Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.FullProduct{
+  display:flex;
+  gap:32px;
+  flex-direction: column;
+ margin-top:150px;
+}
+.mobile-carousel{
+  /* display:none; */
+}
+@media (max-width:47.93rem){
+  .main-page{
+   display:flex;
+   flex-direction:column;
+   max-width:100%;
+  }
+ .main-page, .products-list,.product-list1{
+   max-width:100%;
+  }
+  .product-img{
+    /* display:none; */
+    max-width:100%;
+    position:static
+  
+
+  }
+  .product-list1{
+    display:none;
+  }
+.FullProduct{
+   max-width:100%;
+
+}
+.title{
+color: #1D2026;
+font-family: "Kumbh Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 114.286% */
+
+}
+.description{
+  color: #69707D;
+font-family: "Kumbh Sans";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+}
+.price{
+  color: #1D2026;
+font-family: "Kumbh Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.main-quantity{
+  display:flex;
+  flex-direction:column;
+  width: 100%;
+}
+.input-field,.cart-btn{
+ width: 327px;
+height: 56px;
+flex-shrink: 0;
+}
+.input-field{
+
+  width: 327px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F6F8FD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* or center */
+  padding: 0 10px;
+  gap: 10px;
+}
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: #FF7E1B;
+}
+.quantity-input {
+  width: 100px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+
+
+}

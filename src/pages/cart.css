@@ -1,0 +1,19 @@
+@media (max-width:47.93rem){
+.cart-dropdown{
+  position:absolute;
+  z-index:3000;
+  top:70px;
+  left:-220px;;
+  width: 360px;
+height: 256px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.50);
+}
+
+
+
+}
+
+

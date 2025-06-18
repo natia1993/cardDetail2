@@ -1,0 +1,109 @@
+/* overlay.css ან იგივე ფაილში */
+.carousel-overlay {
+  position: fixed;       /* ზუსტად ეკრანზე ფიქსირდება */
+  top: 0;
+  left: 0;
+  width: 100vw;          /* ეკრანის სიგანე */
+  height: 100vh;         /* ეკრანის სიმაღლე */
+  background-color: rgba(0, 0, 0, 0.7); /* შავი გამჭვირვალე ფონი */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;         /* გადაფაროს ყველაფერი */
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+ width:430px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.arrow-left,
+.arrow-right {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position:absolute;
+
+
+}
+.prev,.next{
+width: 56px;
+height: 56px;
+flex-shrink: 0;
+position:relative;
+background-color: rgba(128, 128, 128, 0.608);
+border-radius: 50%;
+padding-left:22px;
+padding-top:15px;
+}
+@media (max-width: 47.93rem) {
+  /* Hide the close icon on mobile */
+  .close-icon {
+    display: none;
+  }
+
+  /* Hide the thumbnail image list on mobile */
+  .product-list1 {
+    display: none;
+  }
+
+  
+
+  .carousel-overlay {
+  position:static;
+  margin-top:-680px;
+  max-width: 100%;       /* ეკრანის სიგანე */
+  height: 50vh;         /* ეკრანის სიმაღლე */
+  background-color:transparent;/* შავი გამჭვირვალე ფონი */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;         /* გადაფაროს ყველაფერი */
+}
+.product-img {
+    width: 100%;
+    height: auto;    /* maintain natural aspect ratio */
+    max-height: 300px; /* optional max height to limit very tall images */
+    object-fit: contain; /* keep image fully visible */
+  }
+
+  /* Center arrows better for mobile */
+  .arrow {
+    padding: 0;
+    width: 100%;
+    top: 45%;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 36px;
+    height: 36px;
+  }
+  .arrow {
+  position: absolute;
+  top: 37%;
+  left:35.8px;
+ width:300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+  .prev,
+  .next {
+    width: 48px;
+    height: 48px;
+    padding-left: 16px;
+    padding-top: 12px;
+  }
+}
+
+
+
+
+

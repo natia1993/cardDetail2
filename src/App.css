@@ -1,0 +1,162 @@
+nav{
+  display:flex;
+align-items: center;
+
+justify-content: space-between; 
+  gap:2rem;
+}
+.main {
+  max-width: 1000px;   /* Optional: limit width for readability */
+  margin: 0 auto;
+  padding: 2rem;
+}
+h1{
+  display:inline;
+}
+.nav-link {
+color: #69707D;
+text-decoration:none;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 2.3rem; 
+margin-bottom: 2.5rem;
+margin: auto;
+}
+hr {
+  margin-top: 2.5rem;
+  border: none;               /* remove default border */
+  height: 1px;                /* thickness of the line */
+  background-color: #E4E9F2;  /* line color */
+           /* optional spacing */
+}
+.box{
+    display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.box img:nth-child(2){
+  width: 50px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 50px;
+
+}
+.link-box{
+  display:flex;
+  gap:2rem
+}
+.cart-dropdown {
+   width: 360px;
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cart-dropdown img {
+
+  left: 0;
+}
+
+.cart-dropdown ul {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.text{
+  color: #69707D;
+font-family: "Kumbh Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.cart-dropdown {
+  width: 360px;
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.cart-dropdown::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.cart-dropdown ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cart-dropdown ul {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.image-tools{
+  width:50px;
+  height:50px;
+  
+}
+.totalPrice{
+  margin-left:45px;
+  display:flex;
+  gap:10px;
+  flex-direction:column;
+  align-items:center;
+ 
+}
+.link-box {
+  display: flex;
+  gap: 20px;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width:47.93rem){
+nav {
+  display: flex;
+  justify-content: space-between; /* spreads nav content */
+  align-items: center;
+  padding: 1rem;
+}
+
+.burger-menu {
+    display: block;
+  }
+    .link-box {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    z-index: 2000;
+    border-top: 1px solid #ddd;
+  }
+
+  .link-box.open {
+    display: flex;
+  }
+
+
+.box {
+  margin-left: auto; /* pushes .box to the far right */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+}
+
+
