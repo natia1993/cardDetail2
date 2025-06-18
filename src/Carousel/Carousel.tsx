@@ -3,7 +3,6 @@ import "./carousel.css"
 import nextArrow from "../images/icon-next.svg"
 import prevArrow from "../images/icon-previous.svg"
 import shutDown from "../images/icon-close.svg"
-import { useState } from 'react';
 
 type Product = {
   id: number;

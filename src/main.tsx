@@ -1,4 +1,4 @@
-import React, { StrictMode } from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import {
@@ -16,7 +16,6 @@ import Contact from './pages/Contact';
 import Men from './pages/Men';
 import Women from './pages/Women';
 import NotFound from './pages/NotFound';
-import Cart from './pages/Cart';
 
 // ✅ Router-ის აღწერა
 const router = createBrowserRouter([

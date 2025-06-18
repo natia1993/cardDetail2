@@ -1,5 +1,5 @@
 // src/pages/Cart.tsx
-import React from 'react';
+// import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeItem } from '../features/cart/cartSlice';
 import type { RootState } from '../store';

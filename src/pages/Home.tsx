@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
 import { addItem } from '../features/cart/cartSlice';
 import { useDispatch } from 'react-redux';
 import { products } from '../products';
 import './home.css';
 import Carousel from '../Carousel/Carousel';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [image, setImage] = useState(products[0].image);
